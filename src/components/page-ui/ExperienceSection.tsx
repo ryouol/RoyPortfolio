@@ -25,59 +25,73 @@ export function ExperienceSection() {
     );
 }
 
+
+
+
+
+
 const experience = [
     {
-        title: 'Pickleball.com',
+        title: 'Software Engineer Intern',
         description: (
             <ul className="list-disc">
-                <li>Developed a full-stack enterprise applications using React and Nextjs.</li>
-                <li>
-                    Lead the frontend development team, focusing on creating, improving, and fine-tuning web applications to make them fast and
-                    reliable. My job includes planning our technical approaches, guiding the team, and actively coding and reviewing code.
-                </li>
+                <li>Developed and designed iCIEF software using C++, Python, SQL, and Pascal deploying prototype model to production in 4 months.</li>
+                <li>Engineered an encrypted account system with OracleDB, wxSQLite3, & wxWidgets for 1000+ researchers, enhancing data integrity & security by 90%.</li>
+                <li>Automated the control of a robotic needle by implementing A* algorithm, Genetic Algorithm-based heuristic for (TSP) optimization, increasing operational precision by 40%.</li>        
             </ul>
         ),
-        badge: 'Software Engineer/Jan 2024 - Present'
+        badge: 'Advanced Electrophoresis Solutions  | Jan 2024 - Apr 2024'
     },
     {
-        title: 'Bosnia and Herzegovina Futures Foundation',
+        title: 'Lead Software Development Engineer',
         description: (
             <ul className="list-disc">
                 <li>
-                    Actively engaged in personal development, focusing on enhancing my soft skills and public speaking abilities under the guidance of
-                    experienced mentors.
-                </li>
+                Directed development team through app life cycle, using Figma, HTML/CSS, SCSS, JavaScript, Bootstrap,
+& React emphasizing on scalability resulting in a 300% increase in user traffic.
+</li>
                 <li>
-                    Transitioned into a mentorship role, where I guided high school students in developing their soft skills and provided guidance in
-                    career planning and decision-making.
+                    TInnovated client interaction by integrating Google Maps API for geocoding and developing a custom formula for
+service quote estimation, boosting conversion rates by 30%
                 </li>
-                <li>Volunteered in web development team creating fls.ba info website</li>
+                <li>Implemented Google Analytics for user analytics, leveraging data-driven insights to inform business model and
+operational adjustments, increasing startup revenue by 17%</li>
             </ul>
         ),
-        badge: 'Junior -> Senior -> Alumni/Sep 2021 – Present'
+        badge: 'Edge Property Maintenance Services | Sep 2023 – Dec 2023'
     },
     {
-        title: 'Atlantbh',
+        title: 'Apple Developer',
         description: (
             <ul className="list-disc">
-                <li>Developed a full-stack enterprise applications using React, PostgreSQL and Docker.</li>
-                <li>Conducted code reviews, contributing to maintaining high standards of code quality and team collaboration.</li>
-                <li>Provided mentorship to two IT college students, enhancing their practical software engineering skills.</li>
+                 <li>Developed and launched AR/VR educational app on quantum and classical computing ”QuBiT”, utilizing Swift
+and Objective-C, reaching over 3000 learners.</li>
+<li>Engineered and deployed iOS app ”R.A.M”, for secure password and financial management, using Core Data &
+Apple’s Local Authentication achieving a 99.9% success rate in unauthorized access prevention for 400+ users.</li>
+                
             </ul>
         ),
-        badge: 'Junior Software Engineer/Jun 2022 - Jan 2024'
+        badge: 'Apple Inc  | Dec 2022 – Dec 2023 '
     },
     {
-        title: 'Atlantbh (Intenship)',
+        title: 'Founder and President ',
         description: (
             <ul className="list-disc">
-                <li>Developed full-stack applications with React.js and Spring Boot.</li>
-                <li>
-                    Implemented essential software development practices such as GitHub for version control, Maven for project management, JUnit for
-                    testing, and applied design patterns and MVC architecture.
-                </li>
+            <li>Founded a pioneering student-led initiative that synergies engineering principles with practical applications.</li>
+                <li>Orchestrated, & secured $5,000 in grants from the Canadian Physics Society & PAC for engineering education.</li>
+                <li>Initiated the Women in STEM scholarship, enhancing engagement among a diverse group of 13,600+ students.</li>
             </ul>
         ),
-        badge: 'Full Stack Developer/Feb 2022 - May 2022'
+        badge: 'BNS Engineering | Aug 2022 - Jun 2023'
+    }, 
+    { 
+        title: 'Automotive Technican ',
+        description: (
+            <ul className="list-disc">
+            <li>Collaborated with mechanics to troubleshoot problems, utilizing OBD2 to decode & resolve engine faults.</li>
+                <li>Conducted pre-launch system tests on Ford’s pioneering electric vehicle line (F-150 Lightning).</li>
+            </ul>
+        ),
+        badge: 'Ford | Jun 2022 - Aug 2022'
     }
 ];

@@ -29,7 +29,7 @@ export function LandingPage() {
             <p className="text-xs text-neutral-600 dark:text-neutral-200 sm:text-base  "> Electrical & Computer Engineering Student at The University of Waterloo.</p>
             <TypewriterEffectSmooth words={words} />
             <div className="z-30 flex flex-col items-center space-x-0 space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-                <Link href="https://drive.google.com/file/d/1xHPigW5eJQSCCgx3VBFyH5E0y_wwOdDN/view?usp=sharing">
+                <Link href="https://drive.google.com/file/d/1_M6j-4f85U0OtEA0_NBgt2RPl1BkslJs/view?usp=sharing">
                     <Button>Download CV</Button>
                 </Link>
                 <Link href="#contact-me">

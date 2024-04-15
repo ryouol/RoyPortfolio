@@ -3,14 +3,16 @@ import { ExperienceSection } from '@/components/page-ui/ExperienceSection';
 import { LandingPage } from '@/components/page-ui/LandingPage';
 import { ProjectsSection } from '@/components/page-ui/ProjectsSection';
 import { SkillsSection } from '@/components/page-ui/SkillsSection';
+import { AboutMe } from '@/components/page-ui/AboutMe';
 
 export default function Home() {
     return (
         <main>
             <LandingPage />
+            <AboutMe />
             <ExperienceSection />
-            <SkillsSection />
             <ProjectsSection />
+            <SkillsSection />
             <ContactMeForm />
         </main>
     );

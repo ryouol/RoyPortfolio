@@ -13,8 +13,8 @@ const products = [
         thumbnail: '/projects/mern-memories.png'
     },
     {
-        title: 'Next Event',
-        link: 'https://github.com/spojskic/next-dj-events-frontend',
+        title: 'QuBiT',
+        link: 'https://github.com/ryouol/QuBiT',
         thumbnail: '/projects/next-event.png'
     },
     {

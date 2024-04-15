@@ -22,9 +22,10 @@ function NavbarComponent({ className }: { className?: string }) {
                 <MenuItem setActive={setActive} active={active} item="Navigation">
                     <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="#landing-page">Landing Page</HoveredLink>
+                        <HoveredLink href="#about-me">About Me</HoveredLink>
                         <HoveredLink href="#experience">Experience</HoveredLink>
-                        <HoveredLink href="#skills">Skills</HoveredLink>
                         <HoveredLink href="#projects">Projects</HoveredLink>
+                        <HoveredLink href="#skills">Skills</HoveredLink>
                         <HoveredLink href="#contact-me">Contact Me</HoveredLink>
                     </div>
                 </MenuItem>

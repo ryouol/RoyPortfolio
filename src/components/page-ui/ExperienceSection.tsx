@@ -25,11 +25,6 @@ export function ExperienceSection() {
     );
 }
 
-
-
-
-
-
 const experience = [
     {
         title: 'Software Engineer Intern',

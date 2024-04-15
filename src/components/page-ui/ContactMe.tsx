@@ -1,104 +1,33 @@
-
-'use client';
-
-import { zodResolver } from '@hookform/resolvers/zod';
 import React from 'react';
-import { useForm } from 'react-hook-form';
-import { toast } from 'sonner';
-import { z } from 'zod';
-
-import { sendContactForm } from '@/app/actions';
-import { Button } from '@/components/ui/button';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-
-export const contactFormSchema = z.object({
-    name: z.string({ required_error: 'Name is requred.' }).trim().min(2, 'Please enter a valid name.').max(50),
-    email: z.string({ required_error: 'Email is requred.' }).email('Must be a valid email address.'),
-    message: z.string().trim().min(20, 'Please enter a message containing at least 20 characters.').max(500)
-});
-
-export type ContactFormSchemaType = z.infer<typeof contactFormSchema>;
 
 export function ContactMeForm() {
-    const form = useForm<z.infer<typeof contactFormSchema>>({
-        resolver: zodResolver(contactFormSchema),
-        defaultValues: {
-            name: '',
-            email: '',
-            message: ''
-        }
-    });
-
-    async function onSubmit(values: ContactFormSchemaType) {
-        try {
-            const response = await sendContactForm(values);
-
-            if (response.success) {
-                form.reset();
-                toast('Your message has been sent successfully.');
-            } else {
-                toast('An error occurred while sending your message. Please try again later.');
-            }
-            form.reset();
-        } catch (error) {
-            console.error(error);
-            form.reset();
-        }
-    }
-
     return (
         <div id="contact-me" className="mx-auto h-screen max-w-5xl px-8 py-20 md:py-32">
-            <h1 id="skills" className="pb-8 text-2xl font-bold dark:text-white md:text-7xl">
-                Contact Me
+            <h1 className="pb-8 text-2xl font-bold dark:text-white md:text-7xl">
+                Contact Me!
             </h1>
-            <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="max-w-xl space-y-8">
-                    <FormField
-                        control={form.control}
-                        name="name"
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Name</FormLabel>
-                                <FormControl>
-                                    <Input placeholder="John Doe" {...field} />
-                                </FormControl>
-                                <FormMessage />
-                            </FormItem>
-                        )}
-                    />
-                    <FormField
-                        control={form.control}
-                        name="email"
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Email</FormLabel>
-                                <FormControl>
-                                    <Input placeholder="email@gmail.com" {...field} />
-                                </FormControl>
-                                <FormMessage />
-                            </FormItem>
-                        )}
-                    />
-                    <FormField
-                        control={form.control}
-                        name="message"
-                        render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Message</FormLabel>
-                                <FormControl>
-                                    <Textarea rows={7} placeholder="Type your message here." {...field} />
-                                </FormControl>
-                                <FormMessage />
-                            </FormItem>
-                        )}
-                    />
-                    <Button type="submit" disabled={form.formState.isSubmitting}>
-                        Submit
-                    </Button>
-                </form>
-            </Form>
+            <div className="max-w-xl space-y-8">
+                <div className="text-lg">
+                    <p>Open to building new connections, collaborating on projects-hackathons-competitions, and future opportunites!</p>
+                    <ul className="list-disc pl-10 mt-4">
+                        <li>Email: <a href="mailto:royluo05@gmail.com" className="text-blue-500 hover:underline">royluo05@gmail.com</a></li>
+                        <li>School Email: <a href="mailto:r55luo@uwaterloo.ca" className="text-blue-500 hover:underline">r55luo@uwaterloo.ca</a></li>
+                        <li>Phone: <a href="tel:+6043649996" className="text-blue-500 hover:underline">+1 (604)-364-9996</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/ee-royluo/" className="text-blue-500 hover:underline">linkedin.com/in/ee-royluo/</a></li>
+                        <li>GitHub: <a href="https://github.com/ryouol" className="text-blue-500 hover:underline">github.com/ryouol</a></li>
+                        <li>DevPost: <a href="https://devpost.com/ryouol" className="text-blue-500 hover:underline">devpost.com/ryouol</a></li>
+                        <li>Resume: <a href="https://drive.google.com/file/d/1_M6j-4f85U0OtEA0_NBgt2RPl1BkslJs/view?usp=sharing" className="text-blue-500 hover:underline">Roy's Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style={{ padding: '80px' }}> {/* Inline style for padding */}
+            </div>
+
+            <footer className="mt-10 text-center text-sm text-gray-500">
+                © {new Date().getFullYear()} Roy Luo. All rights reserved.
+            </footer>
         </div>
     );
 }
+
+

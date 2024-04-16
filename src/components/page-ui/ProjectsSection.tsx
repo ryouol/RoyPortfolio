@@ -143,7 +143,7 @@ const products = [
     {
         title: 'AI Posing | NVIDIA Jetson AGX ',
         description: 'Computer monitored posture corrector',
-        link: 'https://github.com/spojskic/next-devspace-blog',
+        link: 'https://github.com/ryouol/NVIDIA-JETSON-POSTURE',
         thumbnail: '/projects/Nvidiea2.jpg',
         techStack: ['C', 'C++', 'Python', 'OpenCV', 'TensorFlow', 'PyTorch', 'NVIDIA Jetson Xaiver AGX']
     },
@@ -157,7 +157,7 @@ const products = [
     {
         title: 'MindBridge | Major League Hacking Hackathon Winner',
         description: 'MindBridge is an innovative communication aid designed for non-verbal autistic children, empowering them to express their needs and emotions.',
-        link: 'https://devpost.com/software/mindbridge#updates',
+        link: 'https://devpost.com/software/mindbridge',
         thumbnail: '/projects/gallery.jpg',
         techStack: ['Python', 'React', 'Node.js', 'FastAPI', 'Twillo', 'MongoDB', 'OpenAIAPI']
     },

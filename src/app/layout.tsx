@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        site: '@safetpojskic',
-        title: 'Safet Pojskic',
+        site: '@ryouol',
+        title: 'Roy Luo',
         description: 'Welcome to my personal portfolio!',
         images: ['/opengraph-image.png']
     },

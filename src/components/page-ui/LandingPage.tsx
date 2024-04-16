@@ -19,7 +19,6 @@ const words = [
     }
 ];
 
-
 export function LandingPage() {
     return (
         <div
@@ -43,6 +42,3 @@ export function LandingPage() {
         </div>
     );
 }
-
-
-

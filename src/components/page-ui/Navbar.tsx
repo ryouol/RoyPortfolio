@@ -1,5 +1,5 @@
 'use client';
-import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon, VercelLogoIcon } from '@radix-ui/react-icons';
+import { GitHubLogoIcon, LinkedInLogoIcon, VercelLogoIcon } from '@radix-ui/react-icons';
 import React, { useState } from 'react';
 
 import { ModeToggle } from '@/components/page-ui/ModeToggle';

@@ -1,6 +1,6 @@
 import React from 'react';
-import IframeEmbed from './IframeEmbed'
-import { HeroParallax } from '@/components/ui/hero-paralax';
+
+import IframeEmbed from './IframeEmbed';
 
 // export function ProjectsSection() {
 //     return <HeroParallax products={products} />;
@@ -92,21 +92,21 @@ export function ProjectsSection() {
             <h1 className="text-2xl font-bold dark:text-white md:text-4xl">Featured Projects</h1>
             <div className="space-y-8 py-4">
                 {products.map((product, index) => (
-                    <div key={index} className="bg-white dark:bg-black shadow-lg rounded-lg p-4 transition-colors duration-300">
+                    <div key={index} className="rounded-lg bg-white p-4 shadow-lg transition-colors duration-300 dark:bg-black">
                         <div className="flex flex-col md:flex-row">
                             {product.title === 'Click AI | AI photographer' ? (
                                 <IframeEmbed src={product.thumbnail} width="100%" height="344" title={product.title} />
                             ) : (
-                                <img src={product.thumbnail} alt={product.title} className="w-full md:w-64 md:h-40 object-cover rounded-lg" />
+                                <img src={product.thumbnail} alt={product.title} className="w-full rounded-lg object-cover md:h-40 md:w-64" />
                             )}
-                            <div className="mt-4 md:mt-0 md:ml-6">
+                            <div className="mt-4 md:ml-6 md:mt-0">
                                 <h3 className="text-lg font-semibold dark:text-white">{product.title}</h3>
                                 <p className="text-sm text-gray-600 dark:text-gray-400">{product.description}</p>
-                                <a href={product.link} className="text-blue-500 hover:underline dark:hover:text-blue-400">View Project</a>
+                                <a href={product.link} className="text-blue-500 hover:underline dark:hover:text-blue-400">
+                                    View Project
+                                </a>
                                 {product.techStack && (
-                                    <div className="text-xs text-gray-600 dark:text-gray-400 mt-2">
-                                        {product.techStack.join(', ')}
-                                    </div>
+                                    <div className="mt-2 text-xs text-gray-600 dark:text-gray-400">{product.techStack.join(', ')}</div>
                                 )}
                             </div>
                         </div>
@@ -124,7 +124,7 @@ const products = [
         link: 'https://github.com/mindbridge-study/GeminiAIHacks',
         thumbnail: 'https://giphy.com/embed/3o7qE1YN7aBOFPRw8E',
         //thumbnail: 'https://giphy.com/gifs/vr-bigblueboo-rescuties-3o7qE1YN7aBOFPRw8E', // Responsive version
-        techStack: ['Flutter', 'Python','GeminiAI', 'NVIDIA Jetson']
+        techStack: ['Flutter', 'Python', 'GeminiAI', 'NVIDIA Jetson']
     },
     {
         title: 'Stock Prediction LSTM Neural Networks',
@@ -156,7 +156,8 @@ const products = [
     },
     {
         title: 'MindBridge | Major League Hacking Hackathon Winner',
-        description: 'MindBridge is an innovative communication aid designed for non-verbal autistic children, empowering them to express their needs and emotions.',
+        description:
+            'MindBridge is an innovative communication aid designed for non-verbal autistic children, empowering them to express their needs and emotions.',
         link: 'https://devpost.com/software/mindbridge',
         thumbnail: '/projects/gallery.jpg',
         techStack: ['Python', 'React', 'Node.js', 'FastAPI', 'Twillo', 'MongoDB', 'OpenAIAPI']
@@ -177,7 +178,8 @@ const products = [
     },
     {
         title: 'Hex Dominant Algorithm & Computational Fluid Dynamics Research',
-        description: 'Analysis and quantitative effects of rim geometry on the aerodynamic performance of production passenger vehicles in North America.',
+        description:
+            'Analysis and quantitative effects of rim geometry on the aerodynamic performance of production passenger vehicles in North America.',
         link: 'https://drive.google.com/file/d/1MObE_L92fu-Tr1ylX-4_NdCpJyBT7qDZ/view?usp=sharing',
         thumbnail: '/projects/Screenshot 2023-10-11 at 4.56.25 PM.png',
         techStack: ['SimScale', 'AutoCAD', 'HD Algoirthm', 'CAD', 'CFD']
@@ -188,5 +190,5 @@ const products = [
         link: 'https://drive.google.com/file/d/1m6gol2TOnJJHZY5W9ICW3DlKwiJ4XnIS/view?usp=sharing',
         thumbnail: '/projects/IMG_3281_(1)_(copy).jpg',
         techStack: ['C++', 'AutoCAD', 'Arduino', 'Circuit Analysis', 'Soldering', 'Welding']
-    },
+    }
 ];

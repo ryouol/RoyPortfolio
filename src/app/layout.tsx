@@ -15,7 +15,22 @@ export const metadata: Metadata = {
     title: 'Roy Luo',
     description: 'Welcome to my personal portfolio!',
     applicationName: 'Roy Luo',
-    keywords: ['Roy Luo', 'portfolio', 'personal', 'website', 'developer', 'designer', 'engineer', 'software', 'electrical', 'computer', 'University', ' Waterloo', 'Roy', 'Luo'],
+    keywords: [
+        'Roy Luo',
+        'portfolio',
+        'personal',
+        'website',
+        'developer',
+        'designer',
+        'engineer',
+        'software',
+        'electrical',
+        'computer',
+        'University',
+        ' Waterloo',
+        'Roy',
+        'Luo'
+    ],
     openGraph: {
         siteName: 'Roy Luo',
         title: 'Roy Luo',

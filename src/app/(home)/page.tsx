@@ -1,9 +1,9 @@
+import { AboutMe } from '@/components/page-ui/AboutMe';
 import { ContactMeForm } from '@/components/page-ui/ContactMe';
 import { ExperienceSection } from '@/components/page-ui/ExperienceSection';
 import { LandingPage } from '@/components/page-ui/LandingPage';
 import { ProjectsSection } from '@/components/page-ui/ProjectsSection';
 import { SkillsSection } from '@/components/page-ui/SkillsSection';
-import { AboutMe } from '@/components/page-ui/AboutMe';
 
 export default function Home() {
     return (

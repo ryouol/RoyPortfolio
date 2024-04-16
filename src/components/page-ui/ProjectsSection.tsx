@@ -124,7 +124,14 @@ const products = [
         link: 'https://github.com/mindbridge-study/GeminiAIHacks',
         thumbnail: 'https://giphy.com/embed/3o7qE1YN7aBOFPRw8E',
         //thumbnail: 'https://giphy.com/gifs/vr-bigblueboo-rescuties-3o7qE1YN7aBOFPRw8E', // Responsive version
-        techStack: ['Flutter', 'Python','GeminiAI', 'and More!']
+        techStack: ['Flutter', 'Python','GeminiAI', 'NVIDIA Jetson']
+    },
+    {
+        title: 'Stock Prediction LSTM Neural Networks',
+        description: 'Developed predictive models using Long Short-Term Memory neural networks to forecast stock prices based on historical data',
+        link: 'https://github.com/ryouol/Python-Stock-Predictor',
+        thumbnail: '/projects/1_hnJmoDkR6-inqCe_JRxW0w.png',
+        techStack: ['Python', 'TensorFlow', 'Pandas', 'Keras', 'Yahoo Finance']
     },
     {
         title: 'QuBiT | Spatial Computing',
@@ -137,57 +144,49 @@ const products = [
         title: 'AI Posing | NVIDIA Jetson AGX ',
         description: 'Computer monitored posture corrector',
         link: 'https://github.com/spojskic/next-devspace-blog',
-        thumbnail: '/projects/devspace.png',
+        thumbnail: '/projects/Nvidiea2.jpg',
         techStack: ['C', 'C++', 'Python', 'OpenCV', 'TensorFlow', 'PyTorch', 'NVIDIA Jetson Xaiver AGX']
     },
     {
         title: 'Speach To Text Device | STM32',
         description: 'Built accessible speech-to-text device for the deaf helping aid communication in 99 different languages.',
-        link: '',
-        thumbnail: '/projects/google-clone.png',
+        link: 'https://github.com/ryouol/WhisperAI',
+        thumbnail: '/projects/VTV.jpg',
         techStack: ['C', 'C++', 'Python', 'Pandas', 'WhisperAPI', 'OpenAI', 'STM32']
     },
     {
-        title: 'MindBridge | Major Leagtue Hacking Hackathon Winner',
+        title: 'MindBridge | Major League Hacking Hackathon Winner',
         description: 'MindBridge is an innovative communication aid designed for non-verbal autistic children, empowering them to express their needs and emotions.',
-        link: 'https://github.com/ryouol/MindBridge',
-        thumbnail: '/projects/old-portfolio.png',
+        link: 'https://devpost.com/software/mindbridge#updates',
+        thumbnail: '/projects/gallery.jpg',
         techStack: ['Python', 'React', 'Node.js', 'FastAPI', 'Twillo', 'MongoDB', 'OpenAIAPI']
     },
     {
         title: 'Data Engineering & AI Research',
         description: 'Leaveraging AI for preventive data secuity in the Canadian Communicationse Security Establishment.',
         link: 'https://drive.google.com/file/d/1FdQV1aPee9oEiSlI2Tqh0ks9gH6xq5Lo/view?usp=sharing',
-        thumbnail: '/projects/dresscode.png',
+        thumbnail: '/projects/applsci-13-01778-g001.webp',
         techStack: ['GMM', 'Time Series Analysis', 'LSTM', 'Anomaly Detection', 'Predictive Analystics', 'latex']
-    },
-
-    {
-        title: 'Hex Dominant Algorithm & Computational Fluid Dynamics Research',
-        description: 'Analysis and quantitative effects of rim geometry on the aerodynamic performance of production passenger vehicles in North America.',
-        link: 'https://drive.google.com/file/d/1MObE_L92fu-Tr1ylX-4_NdCpJyBT7qDZ/view?usp=sharing',
-        thumbnail: '/projects/portfoliov2.png',
-        techStack: ['SimScale', 'AutoCAD', 'HD Algoirthm', 'CAD', 'CFD']
-    },
-    {
-        title: 'Electric Go-Kart',
-        description: 'Designed and built an electric go-kart from SCRATCH!',
-        link: '',
-        thumbnail: '/projects/music-app.png',
-        techStack: ['C++', 'AutoCAD', 'Arduino', 'Circuit Analysis', 'Soldering', 'Welding']
     },
     {
         title: 'R.A.M | iOS Dev',
         description: 'Swift-based iOS app, "R.A.M," designed to securely store and manage vital daily information.',
         link: 'https://github.com/ryouol/ramapp',
-        thumbnail: '/projects/artemis.png',
+        thumbnail: '/projects/RAM.png',
         techStack: ['Swift', 'Apple Local Authentication', 'FoundationDB']
     },
     {
-        title: 'Stock Prediction LSTM Neural Networks',
-        description: 'Developed predictive models using Long Short-Term Memory neural networks to forecast stock prices based on historical data',
-        link: 'https://github.com/ryouol/Python-Stock-Predictor',
-        thumbnail: '/projects/artemis.png',
-        techStack: ['Python', 'TensorFlow', 'Pandas', 'Keras', 'Yahoo Finance']
-    }
+        title: 'Hex Dominant Algorithm & Computational Fluid Dynamics Research',
+        description: 'Analysis and quantitative effects of rim geometry on the aerodynamic performance of production passenger vehicles in North America.',
+        link: 'https://drive.google.com/file/d/1MObE_L92fu-Tr1ylX-4_NdCpJyBT7qDZ/view?usp=sharing',
+        thumbnail: '/projects/Screenshot 2023-10-11 at 4.56.25 PM.png',
+        techStack: ['SimScale', 'AutoCAD', 'HD Algoirthm', 'CAD', 'CFD']
+    },
+    {
+        title: 'Electric Go-Kart',
+        description: 'Designed and built an electric go-kart from SCRATCH!',
+        link: 'https://drive.google.com/file/d/1m6gol2TOnJJHZY5W9ICW3DlKwiJ4XnIS/view?usp=sharing',
+        thumbnail: '/projects/IMG_3281_(1)_(copy).jpg',
+        techStack: ['C++', 'AutoCAD', 'Arduino', 'Circuit Analysis', 'Soldering', 'Welding']
+    },
 ];

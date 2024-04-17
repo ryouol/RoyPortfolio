@@ -9,12 +9,12 @@ export function AboutMe() {
             <div className="mt-4 text-lg dark:text-white">
                 <img src="/projects/Me.jpeg" alt="" className="float-left mb-2 mr-4 size-48 rounded-full" />
                 <p>
-                    Hello! I'm Roy Luo, a passionate software developer and technology enthusiast with a background in Electrical Engineering,
-                    Computing, and AI. I enjoy building scalable and efficient solutions that solve complex problems and improve user experiences. I'm
+                    Hello! Im Roy Luo, a passionate software developer and technology enthusiast with a background in Electrical Engineering,
+                    Computing, and AI. I enjoy building scalable and efficient solutions that solve complex problems and improve user experiences. Im
                     from Vancovuer BC, but currently based in Waterloo ON, where I am studying and growing within the tech industry.
                 </p>
                 <div style={{ padding: '30px' }}> {/* Inline style for padding */}</div>
-                <p className="text-xs text-neutral-600 dark:text-neutral-200 sm:text-base  "> "Simplicity is Sophistication"</p>
+                <p className="text-xs text-neutral-600 dark:text-neutral-200 sm:text-base  "> Simplicity is Sophistication</p>
             </div>
 
             <div style={{ padding: '10px' }}> {/* Inline style for padding */}</div>

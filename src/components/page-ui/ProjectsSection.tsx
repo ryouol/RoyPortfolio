@@ -2,90 +2,6 @@ import React from 'react';
 
 import IframeEmbed from './IframeEmbed';
 
-// export function ProjectsSection() {
-//     return <HeroParallax products={products} />;
-// }
-// export function ProjectsSection() {
-//     return (
-//         <div className="mx-auto max-w-5xl px-8 pb-8">
-//             <h1 className="text-2xl font-bold dark:text-white md:text-4xl">Featured Projects</h1>
-//             <div className="flex overflow-x-auto py-4">
-//                 {products.map((product, index) => (
-//                     <div key={index} className="min-w-max mr-8">
-//                         <img src={product.thumbnail} alt={product.title} className="w-64 h-40 object-cover rounded-lg shadow-lg" />
-//                         <h3 className="text-lg font-semibold mt-2">{product.title}</h3>
-//                         <p className="text-sm text-gray-600">{product.description}</p>
-//                         <a href={product.link} className="text-blue-500 hover:underline">View Project</a>
-//                         {/* Conditionally render tech stack if defined */}
-//                         {product.techStack && (
-//                             <div className="text-xs text-gray-600 mt-1">
-//                                 {product.techStack.join(', ')}
-//                             </div>
-//                         )}
-//                     </div>
-//                 ))}
-//             </div>
-//         </div>
-//     );
-// }
-// export function ProjectsSection() {
-//     return (
-//         <div className="mx-auto max-w-5xl px-8 pb-8">
-//             <h1 className="text-2xl font-bold dark:text-white md:text-4xl">Featured Projects</h1>
-//             {/* Removing flex and overflow-x-auto for vertical layout */}
-//             <div className="space-y-8 py-4">
-//                 {products.map((product, index) => (
-//                     <div key={index} className="bg-white shadow-lg rounded-lg p-4">
-//                         <div className="flex flex-col md:flex-row">
-//                             <img src={product.thumbnail} alt={product.title} className="w-full md:w-64 md:h-40 object-cover rounded-lg" />
-//                             <div className="mt-4 md:mt-0 md:ml-6">
-//                                 <h3 className="text-lg font-semibold">{product.title}</h3>
-//                                 <p className="text-sm text-gray-600">{product.description}</p>
-//                                 <a href={product.link} className="text-blue-500 hover:underline">View Project</a>
-//                                 {/* Conditionally render tech stack if defined */}
-//                                 {product.techStack && (
-//                                     <div className="text-xs text-gray-600 mt-2">
-//                                         {product.techStack.join(', ')}
-//                                     </div>
-//                                 )}
-//                             </div>
-//                         </div>
-//                     </div>
-//                 ))}
-//             </div>
-//         </div>
-//     );
-// }
-// export function ProjectsSection() {
-//     return (
-//         <div className="mx-auto max-w-5xl px-8 pb-8">
-//             <h1 className="text-2xl font-bold dark:text-white md:text-4xl">Featured Projects</h1>
-//             <div className="space-y-8 py-4">
-//                 {products.map((product, index) => (
-//                     <div key={index} className="bg-white shadow-lg rounded-lg p-4">
-//                         <div className="flex flex-col md:flex-row">
-//                             {product.title === 'Click AI | AI photographer' ? (
-//                                 <IframeEmbed src={product.thumbnail} width="100%" height="344" title={product.title} />
-//                             ) : (
-//                                 <img src={product.thumbnail} alt={product.title} className="w-full md:w-64 md:h-40 object-cover rounded-lg" />
-//                             )}
-//                             <div className="mt-4 md:mt-0 md:ml-6">
-//                                 <h3 className="text-lg font-semibold">{product.title}</h3>
-//                                 <p className="text-sm text-gray-600">{product.description}</p>
-//                                 <a href={product.link} className="text-blue-500 hover:underline">View Project</a>
-//                                 {product.techStack && (
-//                                     <div className="text-xs text-gray-600 mt-2">
-//                                         {product.techStack.join(', ')}
-//                                     </div>
-//                                 )}
-//                             </div>
-//                         </div>
-//                     </div>
-//                 ))}
-//             </div>
-//         </div>
-//     );
-// }
 export function ProjectsSection() {
     return (
         <div className="mx-auto max-w-5xl px-8 pb-8">
@@ -95,7 +11,8 @@ export function ProjectsSection() {
                     <div key={index} className="rounded-lg bg-white p-4 shadow-lg transition-colors duration-300 dark:bg-black">
                         <div className="flex flex-col md:flex-row">
                             {product.title === 'Click AI | AI photographer' ? (
-                                <IframeEmbed src={product.thumbnail} width="100%" height="344" title={product.title} />
+                                // <IframeEmbed src={product.thumbnail} width="100%" height="344" title={product.title} />
+                                <IframeEmbed src={product.thumbnail} title={product.title} />
                             ) : (
                                 <img src={product.thumbnail} alt={product.title} className="w-full rounded-lg object-cover md:h-40 md:w-64" />
                             )}

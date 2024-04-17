@@ -36,14 +36,14 @@ export const metadata: Metadata = {
         title: 'Roy Luo',
         description: 'Welcome to my personal portfolio!',
         type: 'website',
-        images: ['/opengraph-image.png']
+        images: ['projects/opengraph-image.png']
     },
     twitter: {
         card: 'summary_large_image',
         site: '@ryouol',
         title: 'Roy Luo',
         description: 'Welcome to my personal portfolio!',
-        images: ['/opengraph-image.png']
+        images: ['projects/opengraph-image.png']
     },
     icons: [
         {

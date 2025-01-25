@@ -12,15 +12,11 @@ export function AboutMe() {
       <div className="mt-4 text-lg dark:text-white">
         <img
           src="/projects/Me.jpeg"
-          alt=""
-          className="float-left mb-2 mr-4 size-48 rounded-full"
+          alt="Roy Luo"
+          className="float-left mb-2 mr-4 size-48 rounded-full object-cover object-center"
         />
         <p>
-          Hello! Im Roy Luo, a passionate software developer and technology
-          enthusiast with a background in Electrical Engineering, Computing, and
-          AI. I enjoy building scalable and efficient solutions that solve
-          complex problems and improve user experiences. Im from Vancovuer BC,
-          but currently in the San Fransico Bay Area🌉 interning at Tesla🚗!
+          Hello! Im Roy.
         </p>
         <div style={{ padding: "30px" }}> {/* Inline style for padding */}</div>
         <p className="text-xs text-neutral-600 dark:text-neutral-200 sm:text-base  ">
